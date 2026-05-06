@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://danielleivabanul07-star.github.io/oficialwebsitesdlb/sitemap.xml
