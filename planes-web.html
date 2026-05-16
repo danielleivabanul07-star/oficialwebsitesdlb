@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes Web - SitiosWebDLB</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .planes-web-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 25px;
+      flex-wrap: nowrap;
+      margin: 40px auto;
+      max-width: 1100px;
+    }
+
+    .plan-web-box {
+      width: 280px;
+      height: 300px;
+      background: rgba(0,0,0,0.78);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    .plan-web-box h2 {
+      color: #ffd000;
+      margin-bottom: 15px;
+    }
+
+    .plan-web-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .plan-web-box li {
+      margin-bottom: 10px;
+      color: white;
+      font-size: 15px;
+    }
+
+    .plan-web-box a {
+      background: #ffd000;
+      color: black !important;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    @media (max-width: 900px) {
+      .planes-web-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .plan-web-box {
+        width: 90%;
+        max-width: 330px;
+        height: auto;
+        min-height: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="page-nav">
+  <div class="logo">SitiosWebDLB</div>
+
+  <div class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="galeria.html">Galería</a>
+    <a href="citas.html">Citas</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="marketing.html">Marketing</a>
+  </div>
+</nav>
+
+<section class="page-section">
+
+  <h1>Planes de Creación de Sitios Web</h1>
+
+  <p>
+    Escoge el plan ideal para tu negocio y empieza a atraer más clientes con una página profesional.
+  </p>
+
+  <div class="planes-web-row">
+
+    <div class="plan-web-box">
+      <h2>Plan Básico</h2>
+
+      <ul>
+        <li>Página principal</li>
+        <li>Diseño para teléfono</li>
+        <li>Botón de llamada</li>
+        <li>WhatsApp directo</li>
+      </ul>
+
+      <a href="https://wa.me/16892220829?text=Hola,%20quiero%20saber%20el%20costo%20del%20Plan%20Básico%20de%20sitio%20web" target="_blank">
+        Preguntar costo
+      </a>
+    </div>
+
+    <div class="plan-web-box">
+      <h2>Plan Medium</h2>
+
+      <ul>
+        <li>Todo lo del básico</li>
+        <li>Galería completa</li>
+        <li>Páginas internas</li>
+        <li>Formulario de citas</li>
+      </ul>
+
+      <a href="https://wa.me/16892220829?text=Hola,%20quiero%20saber%20el%20costo%20del%20Plan%20Medium%20de%20sitio%20web" target="_blank">
+        Preguntar costo
+      </a>
+    </div>
+
+    <div class="plan-web-box">
+      <h2>Plan Premium</h2>
+
+      <ul>
+        <li>Todo lo del Medium</li>
+        <li>Diseño avanzado</li>
+        <li>WhatsApp automático</li>
+        <li>SEO básico</li>
+      </ul>
+
+      <a href="https://wa.me/16892220829?text=Hola,%20quiero%20saber%20el%20costo%20del%20Plan%20Premium%20de%20sitio%20web" target="_blank">
+        Preguntar costo
+      </a>
+    </div>
+
+  </div>
+
+  <a href="index.html" class="back-home">Volver al inicio</a>
+
+</section>
+
+<footer>
+  <p>© 2026 SitiosWebDLB</p>
+</footer>
+
+</body>
+</html>
