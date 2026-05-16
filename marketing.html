@@ -3,104 +3,229 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marketing Digital - SitiosWebDLB</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Marketing Digital | SitiosWebDLB</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+        url("fondocover.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 35px 15px 25px;
+      background: rgba(0,0,0,0.75);
+    }
+
+    header h1 {
+      color: #ffcc00;
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      margin: 8px 12px;
+      display: inline-block;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 70px 20px 35px;
+    }
+
+    .hero h2 {
+      color: #ffcc00;
+      font-size: 52px;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      font-size: 28px;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.4;
+    }
+
+    .planes {
+      width: 100%;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .plan {
+      background: rgba(0,0,0,0.65);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 25px;
+      padding: 35px 25px;
+      text-align: center;
+    }
+
+    .plan h3 {
+      color: #ffcc00;
+      font-size: 42px;
+      margin-bottom: 25px;
+    }
+
+    .plan p {
+      font-size: 24px;
+      line-height: 1.45;
+      margin-bottom: 18px;
+    }
+
+    .btn {
+      display: block;
+      background: #ffcc00;
+      color: black;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 16px 20px;
+      border-radius: 12px;
+      margin-top: 25px;
+    }
+
+    .volver {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 15px;
+      background: rgba(0,0,0,0.8);
+      font-size: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 34px;
+      }
+
+      nav a {
+        font-size: 18px;
+        margin: 6px 8px;
+      }
+
+      .hero {
+        padding: 50px 18px 25px;
+      }
+
+      .hero h2 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 22px;
+      }
+
+      .planes {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 0 18px;
+      }
+
+      .plan {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 30px 20px;
+      }
+
+      .plan h3 {
+        font-size: 34px;
+      }
+
+      .plan p {
+        font-size: 21px;
+      }
+
+      .btn {
+        font-size: 20px;
+        width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <nav class="navbar">
-    <div class="logo">SitiosWebDLB</div>
-
-    <div class="menu">
+  <header>
+    <h1>SitiosWebDLB</h1>
+    <nav>
       <a href="index.html">Inicio</a>
       <a href="servicios.html">Servicios</a>
       <a href="galeria.html">Galería</a>
       <a href="citas.html">Citas</a>
       <a href="contacto.html">Contacto</a>
-      <a href="marketing.html">Marketing</a>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 
-<section class="page-section">
+  <section class="hero">
+    <h2>Planes de Marketing Digital</h2>
+    <p>Impulsa tu negocio con contenido profesional y estrategias para atraer más clientes.</p>
+  </section>
 
-  <h1>Planes de Marketing Digital</h1>
+  <section class="planes">
 
-  <p>
-    Impulsa tu negocio con contenido profesional y estrategias para atraer más clientes.
-  </p>
-
-  <div class="marketing-container">
-
-    <!-- PLAN BASICO -->
-    <div class="marketing-box">
-      <h2>Plan Básico</h2>
-
-      <ul>
-        <li>8 videos editados al mes</li>
-        <li>Publicaciones básicas</li>
-        <li>Contenido para Facebook o Instagram</li>
-        <li>Optimización básica del perfil</li>
-      </ul>
-
-      <a 
-        href="https://wa.me/16892220829?text=Hola,%20quiero%20saber%20el%20precio%20del%20Plan%20Básico%20de%20Marketing%20Digital"
-        target="_blank"
-        class="btn-card">
-        Solicitar precio
-      </a>
+    <div class="plan">
+      <h3>Plan Básico</h3>
+      <p>8 videos editados al mes</p>
+      <p>Publicaciones básicas</p>
+      <p>Contenido para Facebook o Instagram</p>
+      <p>Optimización básica del perfil</p>
+      <a class="btn" href="https://wa.me/16892220829?text=Hola,%20quiero%20informacion%20sobre%20el%20Plan%20Basico%20de%20Marketing">Solicitar precio</a>
     </div>
 
-    <!-- PLAN MEDIUM -->
-    <div class="marketing-box">
-      <h2>Plan Medium</h2>
-
-      <ul>
-        <li>15 videos editados al mes</li>
-        <li>Contenido para Facebook e Instagram</li>
-        <li>Diseño de promociones</li>
-        <li>Estrategia para atraer clientes</li>
-      </ul>
-
-      <a 
-        href="https://wa.me/16892220829?text=Hola,%20quiero%20saber%20el%20precio%20del%20Plan%20Medium%20de%20Marketing%20Digital"
-        target="_blank"
-        class="btn-card">
-        Solicitar precio
-      </a>
+    <div class="plan">
+      <h3>Plan Medium</h3>
+      <p>15 videos editados al mes</p>
+      <p>Contenido para Facebook e Instagram</p>
+      <p>Diseño de promociones</p>
+      <p>Estrategia mensual para atraer clientes</p>
+      <a class="btn" href="https://wa.me/16892220829?text=Hola,%20quiero%20informacion%20sobre%20el%20Plan%20Medium%20de%20Marketing">Solicitar precio</a>
     </div>
 
-    <!-- PLAN PREMIUM -->
-    <div class="marketing-box">
-      <h2>Plan Premium</h2>
-
-      <ul>
-        <li>30 videos editados al mes</li>
-        <li>TikTok + Facebook + Instagram</li>
-        <li>Estrategia avanzada</li>
-        <li>Generación de clientes</li>
-      </ul>
-
-      <a 
-        href="https://wa.me/16892220829?text=Hola,%20quiero%20saber%20el%20precio%20del%20Plan%20Premium%20de%20Marketing%20Digital"
-        target="_blank"
-        class="btn-card">
-        Solicitar precio
-      </a>
+    <div class="plan">
+      <h3>Plan Premium</h3>
+      <p>30 videos editados al mes</p>
+      <p>TikTok + Facebook + Instagram</p>
+      <p>Estrategia avanzada</p>
+      <p>Generación de contenido para atraer clientes</p>
+      <a class="btn" href="https://wa.me/16892220829?text=Hola,%20quiero%20informacion%20sobre%20el%20Plan%20Premium%20de%20Marketing">Solicitar precio</a>
     </div>
 
+  </section>
+
+  <div class="volver">
+    <a class="btn" href="index.html">Volver al inicio</a>
   </div>
 
-  <a href="index.html" class="back-home">
-    Volver al inicio
-  </a>
-
-</section>
-
-<footer>
-  <p>© 2026 SitiosWebDLB | Marketing Digital</p>
-</footer>
+  <footer>
+    © 2026 SitiosWebDLB | Marketing Digital
+  </footer>
 
 </body>
 </html>
