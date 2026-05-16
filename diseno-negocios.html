@@ -3,105 +3,234 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diseño para Negocios - SitiosWebDLB</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Diseño para Negocios | SitiosWebDLB</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.78)),
+        url("fondocover.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 35px 15px 25px;
+      background: rgba(0,0,0,0.75);
+    }
+
+    header h1 {
+      color: #ffcc00;
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      margin: 8px 12px;
+      display: inline-block;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 70px 20px 35px;
+    }
+
+    .hero h2 {
+      color: #ffcc00;
+      font-size: 52px;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      font-size: 28px;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.4;
+    }
+
+    .planes {
+      width: 100%;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .plan {
+      background: rgba(0,0,0,0.65);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 25px;
+      padding: 35px 25px;
+      text-align: center;
+    }
+
+    .plan h3 {
+      color: #ffcc00;
+      font-size: 40px;
+      margin-bottom: 25px;
+    }
+
+    .plan p {
+      font-size: 24px;
+      line-height: 1.45;
+      margin-bottom: 18px;
+    }
+
+    .btn {
+      display: block;
+      background: #ffcc00;
+      color: black;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 16px 20px;
+      border-radius: 12px;
+      margin-top: 25px;
+    }
+
+    .volver {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 15px;
+      background: rgba(0,0,0,0.8);
+      font-size: 20px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-attachment: scroll;
+      }
+
+      header h1 {
+        font-size: 34px;
+      }
+
+      nav a {
+        font-size: 18px;
+        margin: 6px 8px;
+      }
+
+      .hero {
+        padding: 50px 18px 25px;
+      }
+
+      .hero h2 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 22px;
+      }
+
+      .planes {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 0 18px;
+      }
+
+      .plan {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 30px 20px;
+      }
+
+      .plan h3 {
+        font-size: 34px;
+        line-height: 1.15;
+      }
+
+      .plan p {
+        font-size: 21px;
+        line-height: 1.4;
+      }
+
+      .btn {
+        font-size: 20px;
+        width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <nav class="navbar">
-    <div class="logo">SitiosWebDLB</div>
-
-    <div class="menu">
+  <header>
+    <h1>SitiosWebDLB</h1>
+    <nav>
       <a href="index.html">Inicio</a>
       <a href="servicios.html">Servicios</a>
       <a href="galeria.html">Galería</a>
       <a href="citas.html">Citas</a>
       <a href="contacto.html">Contacto</a>
-      <a href="marketing.html">Marketing</a>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 
-<section class="page-section">
+  <section class="hero">
+    <h2>Diseño para Negocios</h2>
+    <p>Diseños profesionales para mejorar la imagen de tu negocio y atraer más clientes.</p>
+  </section>
 
-  <h1>Diseño para Negocios</h1>
+  <section class="planes">
 
-  <p>
-    Diseños profesionales para que tu negocio luzca más serio,
-    atractivo y genere más confianza.
-  </p>
-
-  <div class="marketing-container">
-
-    <!-- LOGOS -->
-    <div class="marketing-box">
-      <h2>Diseño de Logos</h2>
-
-      <ul>
-        <li>Logos profesionales</li>
-        <li>Diseños personalizados</li>
-        <li>Archivos listos para redes</li>
-        <li>Imagen de marca</li>
-      </ul>
-
-      <a 
-        href="https://wa.me/16892220829?text=Hola,%20quiero%20información%20sobre%20diseño%20de%20logos"
-        target="_blank"
-        class="btn-card">
-        Solicitar precio
-      </a>
+    <div class="plan">
+      <h3>Diseño Básico</h3>
+      <p>Diseño de logo sencillo</p>
+      <p>Tarjeta de presentación básica</p>
+      <p>Diseño para redes sociales</p>
+      <p>Formato listo para publicar</p>
+      <a class="btn" href="https://wa.me/16892220829?text=Hola,%20quiero%20informacion%20sobre%20el%20paquete%20de%20Diseno%20Basico">Solicitar precio</a>
     </div>
 
-    <!-- TARJETAS -->
-    <div class="marketing-box">
-      <h2>Tarjetas de Negocio</h2>
-
-      <ul>
-        <li>Diseño profesional</li>
-        <li>Tarjetas modernas</li>
-        <li>Listas para imprimir</li>
-        <li>Diseño personalizado</li>
-      </ul>
-
-      <a 
-        href="https://wa.me/16892220829?text=Hola,%20quiero%20información%20sobre%20tarjetas%20de%20negocio"
-        target="_blank"
-        class="btn-card">
-        Solicitar precio
-      </a>
+    <div class="plan">
+      <h3>Diseño Medium</h3>
+      <p>Logo profesional personalizado</p>
+      <p>Tarjeta de presentación</p>
+      <p>Banner digital para redes</p>
+      <p>Diseños promocionales para tu negocio</p>
+      <a class="btn" href="https://wa.me/16892220829?text=Hola,%20quiero%20informacion%20sobre%20el%20paquete%20de%20Diseno%20Medium">Solicitar precio</a>
     </div>
 
-    <!-- BANNERS -->
-    <div class="marketing-box">
-      <h2>Banners y Carteles</h2>
-
-      <ul>
-        <li>Banners grandes</li>
-        <li>Carteles publicitarios</li>
-        <li>Diseño para negocios físicos</li>
-        <li>Diseño llamativo</li>
-      </ul>
-
-      <a 
-        href="https://wa.me/16892220829?text=Hola,%20quiero%20información%20sobre%20banners%20y%20carteles"
-        target="_blank"
-        class="btn-card">
-        Solicitar precio
-      </a>
+    <div class="plan">
+      <h3>Diseño Premium</h3>
+      <p>Logo profesional completo</p>
+      <p>Tarjeta de presentación</p>
+      <p>Banner o cartel publicitario</p>
+      <p>Paquete visual completo para tu marca</p>
+      <a class="btn" href="https://wa.me/16892220829?text=Hola,%20quiero%20informacion%20sobre%20el%20paquete%20de%20Diseno%20Premium">Solicitar precio</a>
     </div>
 
+  </section>
+
+  <div class="volver">
+    <a class="btn" href="index.html">Volver al inicio</a>
   </div>
 
-  <a href="index.html" class="back-home">
-    Volver al inicio
-  </a>
-
-</section>
-
-<footer>
-  <p>© 2026 SitiosWebDLB | Diseño para Negocios</p>
-</footer>
+  <footer>
+    © 2026 SitiosWebDLB | Diseño para Negocios
+  </footer>
 
 </body>
 </html>
