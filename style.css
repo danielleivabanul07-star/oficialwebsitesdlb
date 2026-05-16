@@ -522,3 +522,47 @@ footer {
 .marketing-box .btn-card {
   margin-top: auto !important;
 }
+/* ARREGLO REAL PLANES MARKETING MOVIL */
+@media (max-width: 768px){
+
+  .marketing-plans,
+  .planes-container,
+  .plans-container,
+  .cards {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .marketing-box,
+  .plan-card,
+  .card {
+    width: 90% !important;
+    max-width: 340px !important;
+    min-width: unset !important;
+    height: auto !important;
+    min-height: auto !important;
+    margin-bottom: 30px !important;
+    overflow: visible !important;
+  }
+
+  .marketing-box a,
+  .plan-card a,
+  .card a,
+  .btn {
+    display: block !important;
+    width: 100% !important;
+    max-width: 280px !important;
+    margin: 20px auto !important;
+    position: static !important;
+  }
+
+  body,
+  html {
+    overflow-x: hidden !important;
+  }
+}
