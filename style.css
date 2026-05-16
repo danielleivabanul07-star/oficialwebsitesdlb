@@ -522,3 +522,22 @@ footer {
 .marketing-box .btn-card {
   margin-top: auto !important;
 }
+/* CORREGIR PLANES Y DISENO EN TELEFONO */
+
+@media (max-width: 768px) {
+
+    .marketing-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+
+    .marketing-box {
+        width: 90% !important;
+        max-width: 350px !important;
+        height: auto !important;
+        min-height: 300px !important;
+    }
+
+}
